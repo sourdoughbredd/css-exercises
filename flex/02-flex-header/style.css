@@ -1,13 +1,9 @@
-/* My solution is a great representation of the desired outcome,
-but man, it's very messy and verbose compared to the solution given. */
+/* This is my second attempt at this problem (the day after seeing he solution and
+noticing how verbose my implemntation was). This solution matches the one provided. */
 
 .header  {
   font-family: monospace;
   background: papayawhip;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px;
 }
 
 .logo {
@@ -15,37 +11,12 @@ but man, it's very messy and verbose compared to the solution given. */
   font-weight: 900;
   color: tomato;
   background: white;
-  /* border: 2px solid black; */
   padding: 4px 32px;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.left-links,
-.right-links {
-  /* border: 1px solid red; */
-  flex: 1;
-  margin-left: 12px;
-}
-
-.left-links ul {
-  /* border: 1px solid blue; */
-  justify-content: flex-start;
-}
-
-.right-links ul {
-  /* border: 1px solid blue; */
-  justify-content: flex-end;
 }
 
 a {
@@ -54,4 +25,19 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+/* My Additions */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+ul {
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
 }
