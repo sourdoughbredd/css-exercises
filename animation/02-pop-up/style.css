@@ -61,3 +61,20 @@ button {
 .backdrop.show {
   opacity: 30%;
 }
+
+/* My solution */
+
+.popup-modal {
+  transition: transform 0.4s ease-in-out, opacity 0.2s ease;
+  transform: translate(-50%, -100%);
+}
+
+.popup-modal.show {
+  transform: translate(-50%, -50%);
+}
+
+/* @keyframes dropin {
+  from {
+    margin-bottom: 100%;
+  }
+} */
